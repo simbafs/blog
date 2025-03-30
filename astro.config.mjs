@@ -2,9 +2,9 @@
 
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 // Adapter
-import vercel from '@astrojs/vercel'
+// import vercel from '@astrojs/vercel'
 // Integrations
-import AstroPureIntegration from 'astro-pure'
+import AstroPureIntegration from './packages/pure'
 import { defineConfig } from 'astro/config'
 // Rehype & remark packages
 import rehypeKatex from 'rehype-katex'
@@ -14,7 +14,7 @@ import remarkMath from 'remark-math'
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 // Local integrations
-import { outputCopier } from './src/plugins/output-copier.ts'
+// import { outputCopier } from './src/plugins/output-copier.ts'
 // Local rehype & remark plugins
 import rehypeAutolinkHeadings from './src/plugins/rehype-auto-link-headings.ts'
 // Shiki
@@ -37,8 +37,8 @@ export default defineConfig({
 
   // Adapter
   // 1. Vercel (serverless)
-  adapter: vercel(),
-  output: 'server',
+  // adapter: vercel(),
+  // output: 'server',
   // 2. Vercel (static)
   // adapter: vercelStatic(),
   // 3. Local (standalone)
@@ -64,9 +64,9 @@ export default defineConfig({
 
     // Temporary fix vercel adapter
     // static build method is not needed
-    outputCopier({
-      integ: ['sitemap', 'pagefind']
-    })
+    // outputCopier({
+    //   integ: ['sitemap', 'pagefind']
+    // })
   ],
   // root: './my-project-directory',
 

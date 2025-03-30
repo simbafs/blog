@@ -20,22 +20,9 @@ social.rss = {
       <div
         class='flex items-center gap-x-4 gap-y-2 text-muted-foreground max-sm:flex-col [&_a:hover]:text-primary [&_a]:text-foreground'
       >
-        {
-          footerConf.registration && (
-            <a
-              class='text-xs'
-              style='color:hsl(var(--muted-foreground)/var(--tw-text-opacity,1))'
-              href={footerConf.registration.url}
-              target='_blank'
-            >
-              {footerConf.registration.text}
-            </a>
-          )
-        }
         <span>
           © {year}
-          {config.author} &
-          <a href='/terms/list'>Site policy</a>
+          {config.author}
         </span>
         {
           footerConf.credits && (
@@ -63,7 +50,7 @@ social.rss = {
                 href={url}
                 aria-label={label}
               >
-                <Icon name={platform as keyof typeof footerConf.social} />
+                <Icon name={platform as (keyof typeof footerConf.social)} />
               </a>
             ))
         }

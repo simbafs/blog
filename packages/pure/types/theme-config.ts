@@ -120,13 +120,13 @@ export const ThemeConfigSchema = () =>
     /** Configure the footer of your site. */
     footer: z.object({
       /** Registration information for ICP (optional) */
-      registration: z.object({
-        /** Regstration link */
-        url: z.string().optional().describe('Regstration link'),
-
-        /** Registration show text */
-        text: z.string().optional().describe('Registration show text')
-      }),
+      // registration: z.object({
+      //   /** Regstration link */
+      //   url: z.string().optional().describe('Regstration link'),
+      //
+      //   /** Registration show text */
+      //   text: z.string().optional().describe('Registration show text')
+      // }),
 
       /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
       credits: z

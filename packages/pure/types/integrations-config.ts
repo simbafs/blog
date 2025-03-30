@@ -17,12 +17,12 @@ export const IntegrationConfigSchema = () =>
      * Add a random quote to the footer (default on homepage footer).
      * The quote will be fetched from the specified server and the target will be replaced with the quote.
      */
-    quote: z.object({
-      /** The server to fetch the quote from. */
-      server: z.string(),
-      /** target: string, but (data: unknown) => string */
-      target: z.string()
-    }),
+    // quote: z.object({
+    //   /** The server to fetch the quote from. */
+    //   server: z.string(),
+    //   /** target: string, but (data: unknown) => string */
+    //   target: z.string()
+    // }),
 
     /** Tailwindcss typography */
     typography: z.object({
@@ -43,16 +43,16 @@ export const IntegrationConfigSchema = () =>
     }),
 
     /** The Waline comment system */
-    waline: z.object({
-      /** Enable the Waline comment system. */
-      enable: z.boolean().default(false),
-      /** The server to use for the Waline comment system. */
-      server: z.string().optional(),
-      /** The emoji to use for the Waline comment system. */
-      emoji: z.array(z.string()).optional(),
-      /** Additional configurations for the Waline comment system. */
-      additionalConfigs: z.record(z.string(), z.any()).default({})
-    })
+    // waline: z.object({
+    //   /** Enable the Waline comment system. */
+    //   enable: z.boolean().default(false),
+    //   /** The server to use for the Waline comment system. */
+    //   server: z.string().optional(),
+    //   /** The emoji to use for the Waline comment system. */
+    //   emoji: z.array(z.string()).optional(),
+    //   /** Additional configurations for the Waline comment system. */
+    //   additionalConfigs: z.record(z.string(), z.any()).default({})
+    // })
   })
 
 export type IntegrationConfig = z.infer<ReturnType<typeof IntegrationConfigSchema>>
