@@ -3,7 +3,7 @@ import { Image } from 'astro:assets'
 
 import { PostPreview } from 'astro-pure/components/pages'
 import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
-import { Button, Card, Icon, Label } from 'astro-pure/user'
+import { Button, Card, Collapse, Icon, Label } from 'astro-pure/user'
 import PageLayout from '@/layouts/BaseLayout.astro'
 import ProjectCard from '@/components/home/ProjectCard.astro'
 import Section from '@/components/home/Section.astro'
@@ -73,52 +73,44 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         )
       }
 
-      {
-        /* <Section title='Experience'>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      >
-        <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
+      <Section title='Community'>
+        <Card heading='SITCON' subheading="Students' Information Technology Conference">
+          <ul class='ms-4 list-disc text-muted-foreground'>
+            <li>SITCON 2025 製播組</li>
+            <li>SITCON 2024 製播組、開發組</li>
+            <li>SITCON 2022 場務組</li>
+          </ul>
+        </Card>
+        <Card heading='SITCON HoC' subheading='SITCON Hour of Code'>
+          <ul class='ms-4 list-disc text-muted-foreground'>
+            <li>SITCON HoC 2022 臺南、高雄場助教</li>
+            <li>SITCON HoC 2021 臺南場助教</li>
+            <li>SITCON HoC 2019 新北場助教</li>
+          </ul>
+        </Card>
+        <Card heading='COSCUP' subheading='Conference for Open Source Coders, Users & Promoters'>
+          <ul class='ms-4 list-disc text-muted-foreground'>
+            <li>COSCUP 2023 製播組</li>
+          </ul>
+        </Card>
+      </Section>
 
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-          </li>
-        </ul>
-      </Card>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      />
-    </Section> */
-      }
       <Section title='Education'>
+        <Card
+          heading='交大網工所碩士'
+          subheading='國立交通大學網路工程研究所 碩士學位'
+          date='September 2025 - (expected) June 2027'
+        />
         <Card
           heading='成大物理系學士'
           subheading='國立成功大學物理學系 學士學位'
           date='September 2021 - June 2025'
-          href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-        >
-          {
-            /* <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
-          </li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-        </ul> */
-          }
-        </Card>
+        />
+        <Card
+          heading='成功高中'
+          subheading='臺北市立成功高級中學'
+          date='September 2018 - June 2021'
+        />
       </Section>
 
       <Section title='Projects'>
@@ -127,38 +119,15 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
             href='https://github.com/simbafs/sitcon-broadcast'
             heading='SITCON 直播字卡'
             subheading='程式化產生直播字訊字卡'
-            imagePath='/src/assets/projects/alex-tyson-2BAXJ7ha74s-unsplash.jpg'
           />
-          <!-- <ProjectCard -->
-          <!--   href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' -->
-          <!--   heading='Lorem ipsum' -->
-          <!--   subheading='dolor sit amet, oratio ornatus explicari pro ex' -->
-          <!--   imagePath='/src/assets/projects/angelica-teran-Bk9hpaXHK4o-unsplash.jpg' -->
-          <!-- /> -->
-          <!-- <ProjectCard -->
-          <!--   href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' -->
-          <!--   heading='Lorem ipsum' -->
-          <!--   subheading='dolor sit amet, oratio ornatus explicari pro ex' -->
-          <!--   imagePath='/src/assets/projects/kseniia-zapiatkina-yATU3rg8tNI-unsplash.jpg' -->
-          <!-- /> -->
-          <!-- <ProjectCard -->
-          <!--   href='/projects' -->
-          <!--   heading='More projects' -->
-          <!--   subheading='Check out more projects' -->
-          <!--   imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg' -->
-          <!-- /> -->
+          <ProjectCard
+            href='https://github.com/simbafs/go-web-app'
+            heading='Go web app template'
+            subheading='一個用 Go 寫網站應用程式的模板，編譯的產物只有單一執行檔。'
+          />
         </div>
+        <Button title='More projects' class='w-fit self-end' href='/projects' style='ahead' />
       </Section>
-
-      <!-- <Section title='Certifications'> -->
-      <!--   <Card -->
-      <!--     as='a' -->
-      <!--     heading='Lorem ipsum' -->
-      <!--     subheading='Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio possit voluptatum. Dicat ceteros cu vim. Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.' -->
-      <!--     date='July 2024' -->
-      <!--     href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' -->
-      <!--   /> -->
-      <!-- </Section> -->
 
       <Section title='Skills'>
         <SkillLayout title='Languages' skills={languages} />

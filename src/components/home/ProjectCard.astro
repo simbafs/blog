@@ -16,10 +16,10 @@ const {
 const images = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/projects/*.{jpeg,jpg,png,gif}'
 )
-if (!images[imagePath])
-  throw new Error(
-    `"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`
-  )
+// if (!images[imagePath])
+//   throw new Error(
+//     `"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`
+//   )
 ---
 
 <Tag
@@ -31,14 +31,23 @@ if (!images[imagePath])
   href={href}
   target='_blank'
 >
-  <Image
-    src={images[imagePath]()}
-    alt={altText ?? heading}
-    class='absolute top-0 h-36 w-full object-cover opacity-60 transition-opacity group-hover:opacity-100 dark:opacity-35'
-    loading='lazy'
-  />
+  {
+    imagePath && (
+      <Image
+        src={images[imagePath]()}
+        alt={altText ?? heading}
+        class='absolute top-0 h-36 w-full object-cover opacity-60 transition-opacity group-hover:opacity-100 dark:opacity-35'
+        loading='lazy'
+      />
+    )
+  }
   <div
-    class='z-10 flex flex-col gap-y-0.5 bg-gradient-to-b from-transparent to-primary-foreground to-65% px-5 pb-4 pt-24 transition-all group-hover:to-80%'
+    class:list={[
+      'z-10 flex h-full flex-col gap-y-0.5 bg-gradient-to-b from-transparent to-primary-foreground to-65% px-5 py-4 transition-all group-hover:to-80%',
+      {
+        'pt-24': imagePath
+      }
+    ]}
   >
     <h2 class='text-lg font-medium'>{heading}</h2>
     <p class='text-muted-foreground'>{subheading}</p>
