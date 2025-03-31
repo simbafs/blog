@@ -50,7 +50,7 @@ social.rss = {
                 href={url}
                 aria-label={label}
               >
-                <Icon name={platform as (keyof typeof footerConf.social)} />
+                <Icon name={platform as keyof typeof footerConf.social} />
               </a>
             ))
         }

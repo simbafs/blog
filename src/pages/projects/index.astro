@@ -1,22 +1,17 @@
 ---
 import { Image } from 'astro:assets'
+import { Code } from 'astro:components'
 
-import type { iconsType } from 'astro-pure/types'
-import { Button, Collapse, Icon } from 'astro-pure/user'
+import { Collapse } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import ProjectSection from '@/components/projects/ProjectSection.astro'
-import Sponsors from '@/components/projects/Sponsors.astro'
-import alipay from '@/assets/alipay-qrcode.jpg'
-import KeyIcon from '@/assets/icons/key.svg'
-import wechat from '@/assets/wechat-qrcode.jpg'
 
 const headings = [
-  { depth: 2, slug: 'theme', text: 'Theme' },
-  { depth: 2, slug: 'programs', text: 'Programs' },
-  { depth: 2, slug: 'learnings', text: 'Learnings' },
-  { depth: 2, slug: 'others', text: 'Others' },
-  { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
-  { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
+  { depth: 2, slug: 'ds', text: 'Data Struct' },
+  { depth: 2, slug: 'tools', text: 'Tools' },
+  { depth: 2, slug: 'tg-bots', text: 'Telegram Bots' },
+  { depth: 2, slug: 'blogs', text: 'Blogs' },
+  { depth: 2, slug: 'gpg-key', text: 'GPG Key' }
 ]
 ---
 
@@ -24,162 +19,280 @@ const headings = [
   <p>Github Activities:</p>
   <p>
     <Image
-      src='https://ghchart.rshah.org/659eb9/cworld1'
+      src='https://ghchart.rshah.org/fece46/simbafs'
       alt='github activities'
       inferSize
       loading='lazy'
     />
   </p>
-  <p>
-    If you think it would be useful or interesting to collaborate on a project, you can donate to
-    support my work or contact me to discuss a project.
-  </p>
-  <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
-    <Icon class='size-5' name='receive-money' slot='before' />
-  </Button>
 
-  <h2 id='theme'>Theme</h2>
+  <h2 id='ds'>Data Struct</h2>
   <ProjectSection
     project={[
       {
-        name: '🍭 Astro-theme-pure',
-        description: 'A simple, clean but powerful blog theme build by astro.',
-        links: [
-          { type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
-          { type: 'site', href: 'https://github.com/cworld1/astro-theme-pure' },
-          {
-            type: 'doc',
-            href: 'https://github.com/cworld1/astro-theme-pure/blob/main/src/content/blog/customize/index.md'
-          }
-        ]
+        name: 'RB Tree',
+        description: 'Visualization of Red Block Tree in terminal',
+        links: [{ type: 'github', href: 'https://github.com/simbafs/rbtree' }]
+      },
+      {
+        name: 'Tree',
+        description:
+          'Visualization of Tree like data structures in terminal, including BST, AVL and B-tree',
+        links: [{ type: 'github', href: 'https://github.com/simbafs/tree' }]
       }
     ]}
   />
 
-  <h2 id='programs'>Programs</h2>
+  <h2 id='tools'>Tools</h2>
   <ProjectSection
     project={[
       {
-        name: '🤖 Arknights Telegram Bot',
-        description: 'Telegram Bot for Arknights',
+        name: 'SITCON Broadcast',
+        description: '程式化產生 SITCON 直播上的資訊字卡',
         links: [
-          { type: 'github', href: 'https://github.com/IJNKAWAKAZE/arknights_bot' },
-          { type: 'site', href: 'https://t.me/PtiIopsis_bot' },
+          { type: 'github', href: 'https://github.com/simbafs/sitcon-broadcast' },
+          { type: 'site', href: 'https://sitcon.1li.tw' },
           {
             type: 'doc',
-            href: 'https://github.com/IJNKAWAKAZE/arknights_bot/blob/main/docs/Development.md'
+            href: 'https://github.com/simbafs/sitcon-broadcast/blob/main/README.md'
           }
         ]
       },
       {
-        name: '💄 PKU Art',
-        description: 'A script to beautify pku course website',
+        name: 'pixiv reader',
+        description: '自動翻譯 Pixiv 上的小說',
         links: [
-          { type: 'github', href: 'https://github.com/zhuozhiyongde/pku-art' },
-          { type: 'site', href: 'https://github.com/zhuozhiyongde/pku-art' },
-          { type: 'doc', href: 'https://docs.arthals.ink/docs/pku-art' }
+          { type: 'github', href: 'https://github.com/simbafs/pixivReader' },
+          { type: 'site', href: 'https://pixiv-reader.vercel.app/' }
+        ]
+      },
+      {
+        name: 'Go Web App',
+        description: '一個用 Go 寫網站應用程式的模板，編譯的產物只有單一執行檔。',
+        links: [
+          { type: 'github', href: 'https://github.com/simbafs/go-web-app' },
+          { type: 'doc', href: 'https://github.com/simbafs/go-web-app/blob/main/README.md' }
+        ]
+      },
+      {
+        name: 'OG Image',
+        description: '自動根據文章產生 OG Image（適用於 Hugo）',
+        links: [
+          { type: 'github', href: 'https://github.com/simbafs/og' },
+          { type: 'doc', href: 'https://github.com/simbafs/og/blob/main/README.md' }
         ]
       }
     ]}
   />
-  <Collapse title='Some old projects'>
+  <Collapse title='一些舊專案'>
     <ProjectSection
       project={[
         {
-          name: 'Search Switcher',
-          description: 'Add links to each other in search engines',
-          links: [{ type: 'github', href: 'https://github.com/cworld1/search-switcher' }]
+          name: 'Slides',
+          description: '可以同步播放進度的簡報，使用 Markdown 語法編寫',
+          links: [{ type: 'github', href: 'https://github.com/simbafs/slides' }]
         },
         {
-          name: 'Pure Baidu',
-          description: 'Baidu search page beautification module',
-          links: [
-            { type: 'doc', href: 'https://cworld0.com/blog/pure-baidu' },
-            { type: 'site', href: 'https://userstyles.org/styles/173673/pure' }
-          ]
+          name: 'JingJing',
+          description: '晶晶體產生器',
+          links: [{ type: 'github', href: 'https://github.com/simbafs/JingJing' }]
         }
       ]}
     />
   </Collapse>
 
-  <h2 id='learnings'>Learnings</h2>
+  <h2 id='tg-bots'>Telegram Bots</h2>
   <ProjectSection
     class='my-2'
     project={[
       {
-        name: 'Rust Learning',
-        description: 'Some notes and code about CWorld learning Rust',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/rust-learning' }]
+        name: '臺南火災',
+        description: '監控臺南火災，並將訊息發到 Telegram 頻道',
+        links: [
+          { type: 'github', href: 'https://github.com/simbafs/tainan-fire' },
+          {
+            type: 'site',
+            href: 'https://t.me/tainanfire'
+          }
+        ]
       },
       {
-        name: 'CS 213 Learning',
-        description: 'Notes, code and experiences for Introduction to Computer Systems course',
+        name: '1litw',
+        description: '用 Telegram 管理短網址（沒寫完）',
         links: [
           {
             type: 'github',
-            href: 'https://github.com/zhuozhiyongde/Introduction-To-Computer-System-2023Fall-PKU'
+            href: 'https://github.com/simbafs/1litw'
           }
         ]
       }
     ]}
   />
 
-  <h2 id='others'>Others</h2>
+  <h2 id='blogs'>Blogs</h2>
   <ProjectSection
     project={[
       {
-        name: 'CWorld',
-        description: "CWorld's Github",
-        links: [{ type: 'github', href: 'https://github.com/cworld1' }]
+        name: '一代目（Hexo）',
+        description: '第一代部落格',
+        links: [{ type: 'github', href: 'https://github.com/simbafs/hexo-blog' }]
       },
       {
-        name: 'Arthals',
-        description: 'Arthals Github',
-        links: [{ type: 'github', href: 'https://github.com/zhuozhiyongde' }]
+        name: '一點五代目（自製 Astro 主題）',
+        description: '一個終端機風格的部落格，但效能有點差',
+        links: [{ type: 'github', href: 'https://github.com/simbafs/terminal-blog' }]
+      },
+      {
+        name: '二代目（Hugo）',
+        description: '第二代的部落格',
+        links: [{ type: 'github', href: 'https://github.com/simbafs/hugo-blog' }]
+      },
+      {
+        name: '三代目（Astro）',
+        description: '現在的部落格',
+        links: [{ type: 'github', href: 'https://github.com/simbafs/neo-blog' }]
       }
     ]}
   />
 
   <!-- gpg signature -->
-  <h2 id='gpg-signature'>GPG Signature</h2>
+  <h2 id='gpg-key'>GPG Key</h2>
   <p>
-    You can verify the authenticity of the files I signed by checking the GPG signature. My GPG key
-    is <code>APTX4869</code>, and you can find it on the opengpg key servers or download from it.
+    這是我平常在用的 GPG 金鑰，你可以在 <a href='https://github.com/simbafs.gpg' target='_blank'
+      >這個連結</a
+    > 或是用指紋 <code>FB39 7B64 177E 7C69 6E4D 707F 2FAD 6967 8674 CF25</code> 在公鑰伺服器尋找我公鑰。也可以直接使用以下公鑰檔案匯入
   </p>
-  <Button href='https://keys.openpgp.org/search?q=APTX4869' title='Checkout my key' target='_blank'>
-    <KeyIcon class='size-5' slot='before' />
-  </Button>
+  <Collapse title='GPG Key'>
+    <Code
+      lang='plaintext'
+      meta='gpg-key'
+      theme='github-light'
+      code={`-----BEGIN PGP PUBLIC KEY BLOCK-----
 
-  <!-- sponsorship -->
-  <h2 id='sponsorship'>Sponsorship</h2>
-  <p>Please leave a message or contact me proactively after sponsorship.</p>
-  <div class='flex flex-col justify-center gap-4 sm:flex-row'>
-    {
-      [
-        { name: 'WeChat', icon: 'wechat-pay', image: wechat },
-        { name: 'Alipay', icon: 'alipay', image: alipay }
-      ].map((item) => (
-        <div class='group relative justify-center overflow-hidden rounded-xl border bg-white'>
-          <div class='absolute bottom-0 end-0 start-0 top-0 flex items-center justify-center transition-opacity group-hover:opacity-0'>
-            <Icon class='size-20' name={item.icon as iconsType} />
-          </div>
-          <Image
-            class='mx-auto my-0 max-w-60 opacity-30 blur-sm transition-opacity group-hover:opacity-100 group-hover:blur-none'
-            src={item.image}
-            alt={item.name}
-            loading='lazy'
-          />
-        </div>
-      ))
-    }
-  </div>
-  <p>Thanks to the following sponsors:</p>
-  <Sponsors
-    sponsors={[
-      { name: 'C*a（酷安@暴走の蜗牛）', amount: '2.00', date: '2019-07-02' },
-      { name: '华雄(QQ：1300****71)', amount: '5.00', date: '2019-12-30' },
-      { name: '◌(QQ：1934****45)', amount: '3.00', date: '2019-12-30' },
-      { name: 'Anonymous', amount: '20.00', date: '2022-04-06' }
-    ]}
-  />
+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
+=FNCN
+-----END PGP PUBLIC KEY BLOCK-----
+`}
+    />
+  </Collapse>
 </PageLayout>

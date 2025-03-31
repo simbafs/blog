@@ -40,7 +40,7 @@ export const IntegrationConfigSchema = () =>
       selector: z.string().default('.prose .zoomable'),
       /** Options to pass to the medium zoom library. */
       options: z.record(z.string(), z.any()).default({ className: 'zoomable' })
-    }),
+    })
 
     /** The Waline comment system */
     // waline: z.object({
