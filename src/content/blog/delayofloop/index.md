@@ -14,8 +14,10 @@ legacy: true
 
 ## 單核
 
-![single core](./singleCore.gif)
+<!-- ![single core](./singleCore.gif) -->
+> 圖片已損毀
 
 ## 多核
 
-![four cores](./fourCores.gif)
+<!-- ![four cores](./fourCores.gif) -->
+> 圖片已損毀
