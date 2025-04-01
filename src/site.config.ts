@@ -61,7 +61,7 @@ export const theme: ThemeUserConfig = {
     credits: true,
     /** Optional details about the social media accounts for this site. */
     social: {
-      github: 'https://astro.build/chat',
+      github: 'https://github.com/simbafs',
       x: 'https://x.com/simbafs',
       telegram: 'https://t.me/simbafs'
     }
