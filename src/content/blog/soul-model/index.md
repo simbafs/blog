@@ -4,6 +4,8 @@ publishDate: '2022-06-14'
 description: ''
 tags:
   - fantasy
+  - other
+legacy: true
 ---
 
 # 靈魂世界模型

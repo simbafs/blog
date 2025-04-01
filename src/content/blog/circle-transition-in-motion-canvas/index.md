@@ -6,6 +6,8 @@ tags:
   - animation
   - motion canvas
   - transition
+  - js
+legacy: true
 ---
 
 # Circle Transition in Motion Canvas

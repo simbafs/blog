@@ -5,6 +5,8 @@ description: ''
 tags:
   - youtube-dl
   - bash
+  - linux
+legacy: true
 ---
 
 # Youtube DL

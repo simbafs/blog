@@ -5,6 +5,8 @@ description: ''
 tags:
   - mxlinux
   - systemd
+  - linux
+legacy: true
 ---
 
 # Mxlinux Boot with Systemd

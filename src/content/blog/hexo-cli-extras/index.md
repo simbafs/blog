@@ -4,6 +4,7 @@ publishDate: '2020-02-11'
 description: ''
 tags:
   - hexo
+legacy: true
 ---
 
 # 好用的插件

@@ -6,6 +6,8 @@ tags:
   - pdf
   - cmd
   - cli
+  - linux
+legacy: true
 ---
 
 # Crop and Resize PDF

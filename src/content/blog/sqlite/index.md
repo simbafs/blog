@@ -9,6 +9,7 @@ tags:
   - js
   - sql
   - database
+legacy: true
 ---
 
 # sqlite3

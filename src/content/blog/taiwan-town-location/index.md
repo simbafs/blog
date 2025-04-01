@@ -7,6 +7,8 @@ tags:
   - geolocation
   - opendata
   - api
+  - other
+legacy: true
 ---
 
 # 臺灣地址 API

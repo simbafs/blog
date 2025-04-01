@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 emmet-vim 是 emmet 的 vim 版本（這句好像是廢話

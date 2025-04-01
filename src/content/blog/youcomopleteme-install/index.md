@@ -8,6 +8,8 @@ tags:
   - complete
   - completing
   - dev
+  - linux
+legacy: true
 ---
 
 # YCM Installation

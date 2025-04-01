@@ -4,6 +4,8 @@ publishDate: '2021-12-22'
 description: ''
 tags:
   - latex
+  - other
+legacy: true
 ---
 
 # LaTeX Stater

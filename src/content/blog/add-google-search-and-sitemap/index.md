@@ -4,6 +4,7 @@ publishDate: '2020-08-19'
 description: ''
 tags:
   - hexo
+legacy: true
 ---
 
 # 前置設定

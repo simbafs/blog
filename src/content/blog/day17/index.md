@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 今天的東西相當多，在 [GitHub README Example](https://github.com/neoclide/coc.nvim#example-vim-configuration) 中除了昨天介紹過得今天都收錄了，直接進主題吧！  

@@ -6,6 +6,7 @@ tags:
   - ssh
   - linux
   - tunnel
+legacy: true
 ---
 
 # SSH Tunnel

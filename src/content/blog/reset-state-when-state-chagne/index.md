@@ -6,6 +6,8 @@ tags:
   - useState
   - key
   - reactjs
+  - js
+legacy: true
 ---
 
 # Reset State When State Chagne

@@ -4,6 +4,7 @@ publishDate: '2020-02-10'
 description: ''
 tags:
   - hexo
+legacy: true
 ---
 
 # 把 hexo 部屬到 gh-page

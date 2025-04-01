@@ -5,6 +5,8 @@ description: ''
 tags:
   - libreoffice
   - code format
+  - linux
+legacy: true
 ---
 
 # 安裝

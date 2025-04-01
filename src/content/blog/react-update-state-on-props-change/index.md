@@ -7,6 +7,7 @@ tags:
   - state
   - js
   - frontend
+legacy: true
 ---
 
 # React Update State on Props Change

@@ -6,6 +6,8 @@ tags:
   - vim
   - auto
   - plugin
+  - linux
+legacy: true
 ---
 
 # Vim Auto Comment Plugin

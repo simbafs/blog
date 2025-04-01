@@ -6,6 +6,7 @@ tags:
   - linux
   - sandbox
   - onlinejudge
+legacy: true
 ---
 
 # isolate

@@ -6,6 +6,8 @@ tags:
   - docker
   - nextjs
   - dockerfile
+  - linux
+legacy: true
 ---
 
 # Dockerfile Collection

@@ -7,6 +7,8 @@ tags:
   - CI/CD
   - GitHub Action
   - cloud
+  - golang
+legacy: true
 ---
 
 # 用 Github Action 編譯並發 Release

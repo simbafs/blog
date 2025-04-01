@@ -9,6 +9,8 @@ tags:
   - api
   - backend
   - saas
+  - js
+legacy: true
 ---
 
 # PocketBase

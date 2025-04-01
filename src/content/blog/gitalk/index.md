@@ -5,6 +5,7 @@ description: ''
 tags:
   - hexo
   - github
+legacy: true
 ---
 
 # 啟用 gitalk 留言

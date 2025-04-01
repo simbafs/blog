@@ -9,6 +9,8 @@ tags:
   - yaml
   - env
   - flag
+  - golang
+legacy: true
 ---
 
 # aconf

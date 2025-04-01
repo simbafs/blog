@@ -6,6 +6,9 @@ tags:
   - nginx
   - reverse proxy
   - certbot
+  - linux
+  - server
+legacy: true
 ---
 
 # nginx 反向代理伺服器 (reverse proxy)

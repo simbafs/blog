@@ -2,7 +2,9 @@
 title: Ts to Jsdoc
 publishDate: '2023-09-02'
 description: ''
-tags: []
+tags:
+  - js
+legacy: true
 ---
 
 # Ts to Jsdoc

@@ -4,6 +4,8 @@ publishDate: '2020-09-02'
 description: ''
 tags:
   - nodejs
+  - js
+legacy: true
 ---
 
 # Node Require from Project Root

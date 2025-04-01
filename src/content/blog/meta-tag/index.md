@@ -6,6 +6,8 @@ tags:
   - html
   - meta
   - seo
+  - frontend
+legacy: true
 ---
 
 # Meta Tag

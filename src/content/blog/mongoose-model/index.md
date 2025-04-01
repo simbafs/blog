@@ -8,6 +8,7 @@ tags:
   - js
   - database
   - nosql
+legacy: true
 ---
 
 # Mongoose Model

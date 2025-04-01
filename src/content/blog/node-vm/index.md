@@ -7,6 +7,7 @@ tags:
   - nodejs
   - vm
   - js
+legacy: true
 ---
 
 # Node VM

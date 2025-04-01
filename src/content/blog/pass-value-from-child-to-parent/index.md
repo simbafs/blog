@@ -5,6 +5,9 @@ description: ''
 tags:
   - context
   - rerender
+  - js
+  - reactjs
+legacy: true
 ---
 
 # Pass Value From Child to Parent

@@ -5,6 +5,8 @@ description: ''
 tags:
   - ubuntu
   - logitech
+  - linux
+legacy: true
 ---
 
 # Logitech Mouse Permission Error

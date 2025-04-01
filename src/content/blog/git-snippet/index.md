@@ -4,6 +4,8 @@ publishDate: '2023-02-20'
 description: ''
 tags:
   - git
+  - linux
+legacy: true
 ---
 
 # Git Snippet

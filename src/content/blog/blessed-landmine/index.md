@@ -6,6 +6,7 @@ tags:
   - blessed
   - js
   - cli
+legacy: true
 ---
 
 # Blessed Landmine

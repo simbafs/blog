@@ -8,6 +8,7 @@ tags:
   - touchpad
   - linux
   - laptop
+legacy: true
 ---
 
 # KDE Touchpad Gesture

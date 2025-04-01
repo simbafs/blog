@@ -6,6 +6,7 @@ tags:
   - js
   - frontend
   - firefox
+legacy: true
 ---
 
 # Firefox Event Listener Breakpoint

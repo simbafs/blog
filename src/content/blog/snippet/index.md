@@ -1,26 +1,63 @@
 ---
-title: Bash Snippet
-publishDate: '2023-02-25'
+title: Python Snippet
+publishDate: '2023-02-23'
 description: ''
 tags:
-  - bash
+  - python
   - snippet
-  - command
-  - cli
+  - numpy
+legacy: true
 ---
 
-# Bash Snippet
+# Python Snippet
 
-## Clear broken symlinks
+## Basic
 
+### 未定長度函數參數
+
+```python
+def f(*a):
+	for i in range(len(a)):
+		print(i, a[i])
 ```
- $ find . -type l ! -exec test -e {} \; -exec sudo rm {}  \;
+
+### polynomal
+
+```python
+# polynomial(2, 4, 6, 8)(x) -> 2x^0 + 4x^1 + 6x^2 + 8x^3
+def polynomial(*ai):
+    def f(x):
+        r = 0
+        for n, a in enumerate(ai):
+            r += a*x**n
+        return r
+    return f
 ```
 
-> [stackoverflow](https://unix.stackexchange.com/questions/34248/how-can-i-find-broken-symlinks)
+## Type Annotation
 
-## Random String
+### Numpy Array as Parameter
 
+```python
+def func(A: np.ndarray)
 ```
-$ cat /dev/random | head | md5sum | head -c 32
+
+> [stackoverflow](https://stackoverflow.com/questions/64600748/how-do-i-write-a-2d-array-parameter-specification-in-python)
+
+## Numpy
+
+### Determinant of array
+
+```python
+np.linalg.det(A)
 ```
+
+> [doc](https://numpy.org/doc/stable/reference/generated/numpy.linalg.det.html)
+
+### Multiply a Matrix and a Array
+
+```python
+np.dot(A, x)
+```
+
+> [stackoverflow](https://stackoverflow.com/questions/3890621/how-does-multiplication-differ-for-numpy-matrix-vs-array-classes)

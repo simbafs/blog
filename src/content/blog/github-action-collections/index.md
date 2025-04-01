@@ -2,7 +2,9 @@
 title: Github Action Collections
 publishDate: '2023-08-06'
 description: ''
-tags: []
+tags:
+  - devops
+legacy: true
 ---
 
 # Github Action Collections

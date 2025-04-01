@@ -8,6 +8,8 @@ tags:
   - raylib
   - x11
   - wayland
+  - golang
+legacy: true
 ---
 
 # Raylib at Linux

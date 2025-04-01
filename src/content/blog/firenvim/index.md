@@ -9,6 +9,8 @@ tags:
   - firefox
   - browser
   - editor
+  - linux
+legacy: true
 ---
 
 # Firenvim

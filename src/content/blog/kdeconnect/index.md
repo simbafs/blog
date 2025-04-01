@@ -7,6 +7,7 @@ tags:
   - kde
   - kdeconnect
   - android
+legacy: true
 ---
 
 # kdeconnect

@@ -7,6 +7,7 @@ tags:
   - blessed-contrib
   - js
   - cli
+legacy: true
 ---
 
 # blessed Contrib Tree

@@ -5,6 +5,7 @@ description: ''
 tags:
   - golang
   - ssh
+legacy: true
 ---
 
 # SSH Server

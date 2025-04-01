@@ -4,6 +4,7 @@ publishDate: '2021-05-04'
 description: ''
 tags:
   - kotlin
+legacy: true
 ---
 
 # val vs var

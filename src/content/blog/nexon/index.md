@@ -7,6 +7,8 @@ tags:
   - steam
   - wine
   - proton
+  - game
+legacy: true
 ---
 
 # 如何在 Linux 安裝跑跑卡丁車

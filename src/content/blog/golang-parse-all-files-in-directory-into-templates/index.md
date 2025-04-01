@@ -7,6 +7,7 @@ tags:
   - template
   - gin
   - embed
+legacy: true
 ---
 
 # Golang Parse All Files In Directory Into Templates

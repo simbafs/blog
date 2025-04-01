@@ -8,6 +8,7 @@ tags:
   - node
   - express
   - js
+legacy: true
 ---
 
 # hCaptcha

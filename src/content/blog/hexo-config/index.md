@@ -7,6 +7,7 @@ tags:
   - cactus
   - highlight
   - RSS
+legacy: true
 ---
 
 # 各種設定值嘗試

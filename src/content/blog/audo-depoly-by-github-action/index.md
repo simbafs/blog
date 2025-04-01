@@ -6,6 +6,7 @@ tags:
   - hexo
   - github action
   - cloud
+legacy: true
 ---
 
 # GitHub Action 自動部署 Hexo

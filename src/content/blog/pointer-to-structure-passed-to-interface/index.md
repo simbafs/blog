@@ -6,6 +6,8 @@ tags:
   - pointer
   - interface
   - structure
+  - golang
+legacy: true
 ---
 
 以下程式碼中的 `Admin` 實作了 `User`

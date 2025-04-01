@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 ## 重複

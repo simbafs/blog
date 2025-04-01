@@ -9,6 +9,7 @@ tags:
   - neonKDE
   - git
   - gpg
+legacy: true
 ---
 
 # NeonKDE

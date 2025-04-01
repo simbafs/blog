@@ -12,6 +12,7 @@ tags:
   - selfhost
   - js
   - cms
+legacy: true
 ---
 
 strapi 是一個 headless CMS (content management system)，透過 web 介面就可以建立一個 api server

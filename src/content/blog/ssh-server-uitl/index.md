@@ -8,6 +8,7 @@ tags:
   - authentication
   - publicKey
   - sshKey
+legacy: true
 ---
 
 # SSH Server Util

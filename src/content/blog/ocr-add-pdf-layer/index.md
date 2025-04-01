@@ -5,6 +5,8 @@ description: ''
 tags:
   - pdf
   - ocr
+  - linux
+legacy: true
 ---
 
 # OCR Add PDF Text Layer

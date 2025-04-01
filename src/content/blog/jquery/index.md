@@ -5,6 +5,8 @@ description: ''
 tags:
   - js
   - jquery
+  - frontend
+legacy: true
 ---
 
 # jQuery

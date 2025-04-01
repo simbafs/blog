@@ -6,6 +6,8 @@ tags:
   - cryptography
   - encryption
   - decryption
+  - linux
+legacy: true
 ---
 
 # openssl DES

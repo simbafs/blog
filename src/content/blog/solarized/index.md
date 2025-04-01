@@ -5,6 +5,8 @@ description: ''
 tags:
   - vim
   - colorscheme
+  - linux
+legacy: true
 ---
 
 # Solarized

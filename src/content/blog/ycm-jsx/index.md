@@ -6,6 +6,8 @@ tags:
   - vim
   - jsx
   - react
+  - linux
+legacy: true
 ---
 
 # 讓 YCM 接受 jsx

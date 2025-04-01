@@ -7,6 +7,7 @@ tags:
   - ssh
   - tcpip-forward
   - proxy
+legacy: true
 ---
 
 # Ssh TCP/IP Forward

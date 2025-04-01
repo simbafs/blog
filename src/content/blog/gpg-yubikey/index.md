@@ -6,6 +6,8 @@ tags:
   - GPG
   - SSH
   - yubikey
+  - linux
+legacy: true
 ---
 
 # GPG

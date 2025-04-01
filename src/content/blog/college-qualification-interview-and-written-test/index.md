@@ -4,6 +4,8 @@ publishDate: '2021-04-18'
 description: ''
 tags:
   - college
+  - other
+legacy: true
 ---
 
 # 大學二階面試、筆試

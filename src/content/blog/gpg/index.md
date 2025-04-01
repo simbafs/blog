@@ -6,6 +6,7 @@ tags:
   - git
   - linux
   - gpg
+legacy: true
 ---
 
 # GPG

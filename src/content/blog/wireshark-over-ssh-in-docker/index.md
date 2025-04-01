@@ -8,6 +8,8 @@ tags:
   - ssh
   - remote
   - package
+  - linux
+legacy: true
 ---
 
 # Wireshark Over SSH in Docker

@@ -7,6 +7,7 @@ tags:
   - express
   - passport.js
   - js
+legacy: true
 ---
 
 # Passport.js

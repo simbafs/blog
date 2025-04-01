@@ -7,6 +7,8 @@ tags:
   - ssh
   - gpg
   - security
+  - linux
+legacy: true
 ---
 
 # Yubikey

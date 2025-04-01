@@ -6,6 +6,7 @@ tags:
   - ts
   - snippet
   - js
+legacy: true
 ---
 
 # TypeScript Snippet

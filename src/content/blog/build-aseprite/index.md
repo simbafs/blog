@@ -7,6 +7,8 @@ tags:
   - pixel art
   - cmake
   - ninja
+  - linux
+legacy: true
 ---
 
 # Build Aseprite

@@ -6,6 +6,8 @@ tags:
   - og
   - svg
   - png
+  - js
+legacy: true
 ---
 
 # OG

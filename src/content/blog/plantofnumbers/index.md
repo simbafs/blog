@@ -4,6 +4,8 @@ publishDate: '2022-06-11'
 description: ''
 tags:
   - buckyball
+  - other
+legacy: true
 ---
 
 # 同「邊數」的平面

@@ -6,6 +6,7 @@ tags:
   - js
   - google
   - cloud
+legacy: true
 ---
 
 # Google AppScript

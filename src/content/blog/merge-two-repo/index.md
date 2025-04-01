@@ -5,6 +5,8 @@ description: ''
 tags:
   - git
   - merge
+  - linux
+legacy: true
 ---
 
 # Merge Two Repo

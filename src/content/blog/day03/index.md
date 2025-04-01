@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 昨天裝好外掛管理器了，接下來我們要用 zplug 來裝一些好玩的外掛囉！

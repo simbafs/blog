@@ -5,6 +5,8 @@ description: ''
 tags:
   - gitignore
   - git
+  - linux
+legacy: true
 ---
 
 # Gitignore

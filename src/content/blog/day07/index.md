@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 昨天的結尾提到要整合 tmux 和 zsh 不是在 `~/.zshrc` 結尾執行 `tmux` 這麼簡單，今天就讓我們看看會遇到什麼問題吧！

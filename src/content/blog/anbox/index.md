@@ -7,6 +7,7 @@ tags:
   - linux
   - android
   - emulator
+legacy: true
 ---
 
 # Anbox

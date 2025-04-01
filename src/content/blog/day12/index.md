@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 俗話說人要衣裝，佛要金裝，我們的 vim 也得要有**漂亮的外觀**。今天就讓我們來看看如何~~調教~~調整 vim 的外觀吧！

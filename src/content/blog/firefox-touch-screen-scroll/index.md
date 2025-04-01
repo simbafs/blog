@@ -7,6 +7,8 @@ tags:
   - ubuntu
   - gnome
   - desktop
+  - linux
+legacy: true
 ---
 
 # Firefox Touch Screen Scroll

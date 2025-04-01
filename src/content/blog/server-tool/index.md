@@ -5,6 +5,9 @@ description: ''
 tags:
   - bash
   - RegEx
+  - linux
+  - server
+legacy: true
 ---
 
 # Server Tool

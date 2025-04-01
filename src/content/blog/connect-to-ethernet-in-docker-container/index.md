@@ -5,6 +5,7 @@ description: ''
 tags:
   - docker
   - linux
+legacy: true
 ---
 
 # Connect to Ethernet in Docker Container

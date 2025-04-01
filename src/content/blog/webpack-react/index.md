@@ -7,6 +7,7 @@ tags:
   - reactjs
   - frontend
   - js
+legacy: true
 ---
 
 # Webpack Reactjs

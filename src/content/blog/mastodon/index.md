@@ -5,6 +5,8 @@ description: ''
 tags:
   - mastodon
   - error
+  - linux
+legacy: true
 ---
 
 # Mastodon

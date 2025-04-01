@@ -7,6 +7,9 @@ tags:
   - ssh
   - self-host
   - git
+  - linux
+  - server
+legacy: true
 ---
 
 # Gitea

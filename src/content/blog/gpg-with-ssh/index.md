@@ -7,6 +7,8 @@ tags:
   - SSH
   - encryption
   - cryptography
+  - linux
+legacy: true
 ---
 
 # GPG with SSH

@@ -5,6 +5,8 @@ description: ''
 tags:
   - bubbletea
   - cli
+  - golang
+legacy: true
 ---
 
 # charmbracelet/bubbletea

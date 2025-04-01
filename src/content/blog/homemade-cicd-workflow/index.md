@@ -7,6 +7,7 @@ tags:
   - devops
   - docker
   - webhook
+legacy: true
 ---
 
 # Homemade CI/CD Workflow

@@ -7,6 +7,8 @@ tags:
   - loop
   - seq
   - tips
+  - linux
+legacy: true
 ---
 
 # Bash Number Loop

@@ -5,6 +5,8 @@ description: ''
 tags:
   - bash
   - completion
+  - linux
+legacy: true
 ---
 
 # Bash Completion

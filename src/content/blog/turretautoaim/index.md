@@ -4,6 +4,8 @@ publishDate: '2022-05-18'
 description: ''
 tags:
   - mindustry
+  - game
+legacy: true
 ---
 
 # 砲台自動瞄準

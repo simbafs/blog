@@ -4,6 +4,8 @@ publishDate: '2022-05-22'
 description: ''
 tags:
   - mindustry
+  - game
+legacy: true
 ---
 
 # 目的

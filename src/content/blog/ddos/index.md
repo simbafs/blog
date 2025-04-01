@@ -5,6 +5,9 @@ description: ''
 tags:
   - ddos
   - bash
+  - linux
+  - server
+legacy: true
 ---
 
 # DDOS

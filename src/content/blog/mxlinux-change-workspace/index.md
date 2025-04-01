@@ -4,6 +4,8 @@ publishDate: '2020-05-08'
 description: ''
 tags:
   - mxlinux
+  - linux
+legacy: true
 ---
 
 # Mxlinux Change Workspace

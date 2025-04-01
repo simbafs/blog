@@ -2,7 +2,9 @@
 title: Bluetooth 突然卡住都不動
 publishDate: '2022-03-02'
 description: ''
-tags: []
+tags:
+  - linux
+legacy: true
 ---
 
 # Bluetooth 突然卡住都不動

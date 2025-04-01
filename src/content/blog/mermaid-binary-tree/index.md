@@ -6,6 +6,8 @@ tags:
   - mermaid
   - graph theorey
   - tree
+  - other
+legacy: true
 ---
 
 # Mermaid Binary Tree

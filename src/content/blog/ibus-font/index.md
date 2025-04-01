@@ -5,6 +5,8 @@ description: ''
 tags:
   - ibus
   - font
+  - linux
+legacy: true
 ---
 
 # Ibus Font

@@ -2,7 +2,9 @@
 title: 震動 vs 振動
 publishDate: '2022-03-09'
 description: ''
-tags: []
+tags:
+  - other
+legacy: true
 ---
 
 # 震動 vs 振動

@@ -5,6 +5,8 @@ description: ''
 tags:
   - frontent
   - HTML
+  - frontend
+legacy: true
 ---
 
 # HTML Form Button

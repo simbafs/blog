@@ -4,6 +4,9 @@ publishDate: '2020-06-23'
 description: ''
 tags:
   - nginx linux
+  - linux
+  - server
+legacy: true
 ---
 
 # Nginx UI

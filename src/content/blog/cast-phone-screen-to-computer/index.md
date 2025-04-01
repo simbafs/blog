@@ -8,6 +8,7 @@ tags:
   - adb
   - wireless
   - usb debug
+legacy: true
 ---
 
 # Cast Phone Screen to Computer

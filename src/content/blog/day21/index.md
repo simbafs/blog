@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 <!-- |                     ![stackoverflow meme](stackoverflow-meme.png)                      | -->

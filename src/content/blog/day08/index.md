@@ -9,6 +9,8 @@ tags:
   - vim
   - tmux
   - zsh
+  - ithelp
+legacy: true
 ---
 
 tmux 有許多的**快捷鍵**來控制螢幕，不論是分割、移動都可以輕鬆完成

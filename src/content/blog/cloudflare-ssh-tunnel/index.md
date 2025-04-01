@@ -8,6 +8,8 @@ tags:
   - cloudflared
   - cloudflare
   - tunnel
+  - linux
+legacy: true
 ---
 
 # Cloudflare SSH Tunnel
