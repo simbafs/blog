@@ -46,7 +46,12 @@ tags:
 pure 這個主題感覺用的人不多，所以他們在讓使用者修改設定這方面做得不如之前 [hugo 那個主題](https://github.com/CaiJimmy/hugo-theme-stack) 好（看 GitHub 星星數可以略知一二，pure 只有 155，stack 有 5.5k），很多地方甚至要直接改程式碼。  
 首先第一個改動是修改 `astro-pure` 這個相依，這個庫其實就是指到 `packages/pure` 這個目錄，不知道為什麼他們要分開，改完後我就可以盡情修改所有 pure 的程式碼了。  
 然後把一堆不需要的東西移除，像是微信 QRcode、ICP 番號這些中國人才需要的東西，然有留言、瀏覽次數統計等等。  
-到這裡差不多裝修就完成了。  
+
+> Updated:   
+> 
+> 我看動為什麼 pure 要把一部分東西塞進 `packages/pure`，然後弄成一個 npm package 了，他想要做成一個「[元件庫](https://astro.build/integrations)」，這樣就算你不用他的 pages、layout，也可以使用他定義的一系列元件。但有個問題，他的 `packages/pure` 些的有點爛，有些東西不能關掉，像是只有中國人在用的 ICP 番號、某些 UI 設計等等。簡單來說就是通用性不足。  
+> 
+> 如果他可以改善這個問題，分離成 `packages/pure` 就會變得比較合理。但我還是需要修改 `packages/pure` 裡的東西，所以還是得把 `astro-pure` 指向本地套件（`packages/pure` 目錄）  
   
 ### 入厝  
   
