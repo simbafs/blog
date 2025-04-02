@@ -1,10 +1,6 @@
 // @ts-check
 
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
-// Adapter
-// import vercel from '@astrojs/vercel'
-// Integrations
-import AstroPureIntegration from './packages/pure'
 import { defineConfig } from 'astro/config'
 // Rehype & remark packages
 import rehypeKatex from 'rehype-katex'
@@ -13,10 +9,11 @@ import remarkMath from 'remark-math'
 // Others
 // import { visualizer } from 'rollup-plugin-visualizer'
 
-// Local integrations
-// import { outputCopier } from './src/plugins/output-copier.ts'
+import AstroPureIntegration from './packages/pure'
+
 // Local rehype & remark plugins
 import rehypeAutolinkHeadings from './src/plugins/rehype-auto-link-headings.ts'
+
 // Shiki
 import {
   addCopyButton,
@@ -30,20 +27,9 @@ import config from './src/site.config.ts'
 
 // https://astro.build/config
 export default defineConfig({
-  // Top-Level Options
   site: 'https://blog.simbafs.cc',
   // base: '/docs',
   trailingSlash: 'never',
-
-  // Adapter
-  // 1. Vercel (serverless)
-  // adapter: vercel(),
-  // output: 'server',
-  // 2. Vercel (static)
-  // adapter: vercelStatic(),
-  // 3. Local (standalone)
-  // adapter: node({ mode: 'standalone' }),
-  // ---
 
   image: {
     service: {
@@ -56,26 +42,10 @@ export default defineConfig({
     // sitemap(),
     // mdx(),
     // tailwind({ applyBaseStyles: false }),
-    AstroPureIntegration(config),
-    // (await import('@playform/compress')).default({
-    //   SVG: false,
-    //   Exclude: ['index.*.js']
-    // }),
-
-    // Temporary fix vercel adapter
-    // static build method is not needed
-    // outputCopier({
-    //   integ: ['sitemap', 'pagefind']
-    // })
+    AstroPureIntegration(config)
   ],
-  // root: './my-project-directory',
 
-  // Prefetch Options
   prefetch: true,
-  // Server Options
-  server: {
-    host: true
-  },
   // Markdown Options
   markdown: {
     remarkPlugins: [remarkMath],
@@ -110,12 +80,12 @@ export default defineConfig({
   experimental: {
     svg: true
   },
-  vite: {
-    // plugins: [
-    //   visualizer({
-    //     emitFile: true,
-    //     filename: 'stats.html'
-    //   })
-    // ]
-  }
+  // vite: {
+  //   plugins: [
+  //     visualizer({
+  //       emitFile: true,
+  //       filename: 'stats.html'
+  //     })
+  //   ]
+  // }
 })
