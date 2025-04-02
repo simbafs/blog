@@ -111,3 +111,13 @@ const socialImageURL = new URL(ogImage ? ogImage : '/images/social-card.png', As
     </script>
   )
 }
+
+<!-- Google tag (gtag.js) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-DTMEFY7DTF"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DTMEFY7DTF');
+</script>
