@@ -29,7 +29,7 @@ import config from './src/site.config.ts'
 export default defineConfig({
   site: 'https://blog.simbafs.cc',
   // base: '/docs',
-  trailingSlash: 'never',
+  trailingSlash: 'always',
 
   image: {
     service: {
