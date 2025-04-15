@@ -10,10 +10,8 @@ import remarkMath from 'remark-math'
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 import AstroPureIntegration from './packages/pure'
-
 // Local rehype & remark plugins
 import rehypeAutolinkHeadings from './src/plugins/rehype-auto-link-headings.ts'
-
 // Shiki
 import {
   addCopyButton,
@@ -76,10 +74,10 @@ export default defineConfig({
         addCopyButton(2000)
       ]
     }
-  },
-  experimental: {
-    svg: true
-  },
+  }
+  // experimental: {
+  //   svg: true
+  // },
   // vite: {
   //   plugins: [
   //     visualizer({
