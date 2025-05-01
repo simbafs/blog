@@ -1,0 +1,150 @@
+{
+  "main": {
+    "id": "10982dc957ea95d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a7deaae04091b97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d70128b08e4ec50e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新分頁"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bd2a805fa47b20ce",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "830a8a9c54b0c0fa",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "檔案瀏覽器"
+        }
+      },
+      {
+        "id": "f46dcc37bab444cc",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "搜尋"
+        }
+      },
+      {
+        "id": "ba9588f37bda8100",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "標籤"
+        }
+      },
+      {
+        "id": "aad56117149c0e41",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "書籤"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "671d4f41e80f3d78",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f3bed8f41f4ccbaa",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "反向連結"
+        }
+      },
+      {
+        "id": "fcb91d3a73e4ede6",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "對外連結"
+        }
+      },
+      {
+        "id": "7790dedd96172fc4",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "大綱"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false
+    }
+  },
+  "active": "d70128b08e4ec50e",
+  "lastOpenFiles": []
+}
