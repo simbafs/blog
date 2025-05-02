@@ -24,9 +24,10 @@ nvme0n1     259:0    0 931.5G  0 disk  
 |-nvme0n1p4 259:4    0 668.9G  0 part /home  
 `-nvme0n1p5 259:5    0   100G  0 part
 ```
-我有一個 1T 的 SSD，分成了 `boot`、`swap`、`root1`、`home` 和 `root2`，原本的 KDE neon 裝在 `root1` 也就是 `nvme0n1p1`，這是的 Arch Linux 預計裝在 `root2`。  
+我有一個 1T 的 SSD，分成了 `boot`、`swap`、`root1`、`home` 和 `root2`，原本的 KDE neon 裝在 `root1` 也就是 `nvme0n1p5`，這是的 Arch Linux 預計裝在 `root2`。  
 ### bootloader
 而之前因為我還在 `root2` 裝了 PopOS（也是想試試），然後因為 PopOS 用的 bootloader 不是 grub 而是 systemd-boot（我把 KDE neon 也弄成用 systemd-boot 開機了）
+所以還要另外處理 systemd-boot 的部分，不然開機會找不到 arch linux
 ## 大略過程
 ### Live USB
 前面都跟平常一樣，下載 ISO、用 `dd` 燒錄到隨身碟上、用隨身碟開機。再來就不太一樣了，眾所周知 Arch Linux 沒有圖形化的安裝界面，全都要用命令行安裝，為了能舒服的用瀏覽器開 https://wiki.archlinux.org/title/Installation_guide 看教學，於是我做了以下動作：
