@@ -10,7 +10,8 @@ if [ -z "$msg" ]; then
     msg=$(date +%Y-%m-%d)
 fi
 
-fixGPG
+export GPG_TTY=$(tty)
+echo UPDATESTARTUPTTY | gpg-connect-agent
 git add .
 git commit -m "$msg"
 git push
