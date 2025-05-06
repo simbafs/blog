@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "1bf8d95281f9380a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/ForwardedTCPHandler/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,13 +181,15 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "c3dd708fefbe9b4e",
+  "active": "1bf8d95281f9380a",
   "lastOpenFiles": [
     "blog/archlinux/index.md",
+    "blog/ForwardedTCPHandler/index.md",
+    "blog/ForwardedTCPHandler",
+    "未命名",
     "blog/archlinux",
     "blog/test/未命名.md",
     "template/index.md",
-    "未命名.md",
     "blog/test/test.md",
     "blog/test",
     "template"
