@@ -7,12 +7,13 @@ import { cn } from '../../utils'
 import { Button, FormattedDate, Icon } from '../user'
 
 type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
+  prefix?: string
   post: CollectionEntry<CollectionKey>
   detailed?: boolean
   class?: string
 }
 
-const { as: Tag = 'div', post, detailed = false, class: className } = Astro.props
+const { as: Tag = 'div', post, detailed = false, class: className, prefix = "blog" } = Astro.props
 
 const { id, data } = post
 
@@ -37,7 +38,7 @@ const postDate = data.updatedDate ?? data.publishDate
       !detailed && 'sm:flex-row',
       detailed && data.heroImage && 'max-md:pt-24'
     )}
-    href={`/blog/${id}`}
+    href={`/${prefix}/${id}/`}
     data-astro-prefetch
   >
     {

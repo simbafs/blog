@@ -10,7 +10,7 @@ interface Props {
 }
 
 const {
-  data: { title, description, heroImage, publishDate, updatedDate, tags, language, draft, legacy },
+  data: { title, description, heroImage, publishDate, updatedDate, tags, language, draft },
   remarkPluginFrontmatter
 } = Astro.props
 
@@ -41,7 +41,6 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
   )
 }
 
-{legacy ? <span class='text-red-500'>(Legacy)</span> : null}
 {draft ? <span class='text-red-500'>(Draft)</span> : null}
 
 <div class='article-info max-lg:mx-auto'>
