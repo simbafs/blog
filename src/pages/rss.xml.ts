@@ -54,7 +54,7 @@ const renderContent = async (post: CollectionEntry<'blog'>, site: URL) => {
 }
 
 const GET = async (context: AstroGlobal) => {
-  const allPostsByDate = sortMDByDate(await getBlogCollection())
+  const allPostsByDate = sortMDByDate(await getBlogCollection('blog'))
   const siteUrl = context.site ?? new URL(import.meta.env.SITE)
 
   return rss({
@@ -73,7 +73,8 @@ const GET = async (context: AstroGlobal) => {
         link: `/blog/${post.id}`,
         customData: `<h:img src="${typeof post.data.heroImage?.src === 'string' ? post.data.heroImage?.src : post.data.heroImage?.src.src}" />
           <enclosure url="${typeof post.data.heroImage?.src === 'string' ? post.data.heroImage?.src : post.data.heroImage?.src.src}" />`,
-        content: await renderContent(post, siteUrl),
+        // TODO:
+        content: await renderContent(post as CollectionEntry<'blog'>, siteUrl),
         ...post.data
       }))
     )
