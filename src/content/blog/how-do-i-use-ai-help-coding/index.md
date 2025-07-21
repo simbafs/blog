@@ -44,3 +44,9 @@ coding 分兩個，一個是加新功能，另一個是修 bug。
 因為我的 git 有設定要簽章，三不五時他就會要我輸入 GPG 密碼解密密鑰，所以 AI 常常無法正確 commit，因此我都是叫他「generate commit message compared to HEAD and write it to commit.txt」，會叫他「compared to HEAD」是因為 Gemini 有時會只寫他做的事，我幫他修的東西他會當作看不見，或是我撤回他的大便但是他當作那個修改還在。接著使用命令 `git commit -F commit.txt` 提交更變。
 
 > 當然 `commit.txt` 要加入 `.gitignore`
+
+## FQA
+
+### 什麼時候 Gemini CLI 的額度會重設？
+
+Gemini CLI 額度分成每分鐘和每天兩種，每天的那個比較討厭，因為每分鐘的限制滑個手機就過了，根據 [這一篇 issue](https://github.com/google-gemini/gemini-cli/issues/2981) ，太平洋時間 00:00 會重設，也就是臺灣時間下午三點。
