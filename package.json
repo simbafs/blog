@@ -32,7 +32,7 @@
     "@types/mdast": "^4.0.4",
     "@typescript-eslint/utils": "^8.29.0",
     "@waline/client": "^3.4.1",
-    "astro": "^5.7.0",
+    "astro": "^5.15.6",
     "astro-pure": "link:packages/pure",
     "hast": "^1.0.0",
     "hast-util-select": "^6.0.4",
